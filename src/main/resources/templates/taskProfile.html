@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task profile</title>
+        <link th:href="@{/style.css}" rel="stylesheet" />
+</head>
+<body class="body_tasks">
+
+    <h1 th:text="Task + ${task.id}">Task:</h1>
+    <p>ID: <span th:text="${task.id}"></span></p>
+    <p>Description: <span th:text="${task.description}"></span></p>
+    <p>Status: <span th:text="${task.status}"></span></p>
+    <p>Creat: <span th:text="${task.createdAt}"></span></p>
+    <p>Update: <span th:text="${task.updatedAt}"></span></p>
+    <p>Executors: <span th:text="${task.executors}"></span></p>
+
+
+    <h1>-------------------------------------------------</h1>
+
+
+
+</body>
+</html>
